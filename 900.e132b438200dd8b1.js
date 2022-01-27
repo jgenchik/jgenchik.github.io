@@ -1,0 +1,1 @@
+(()=>{"use strict";function s(e){return e<=1?1:s(e-1)+s(e-2)}addEventListener("message",({data:e})=>{if(e&&"number"==typeof e){const r=s(e);postMessage(r)}else postMessage("Invalid input")})})();
